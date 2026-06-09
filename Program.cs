@@ -1,3 +1,4 @@
+using APBD_DatabaseFirst.Services;
 using APBD_DatabaseFirst.Data;
 using Microsoft.EntityFrameworkCore;
 
@@ -9,6 +10,8 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddDbContext<HospitalDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+builder.Services.AddScoped<IPatientService, PatientService>();
 
 var app = builder.Build();
 
