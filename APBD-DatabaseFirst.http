@@ -1,6 +1,0 @@
-@APBD_DatabaseFirst_HostAddress = http://localhost:5008
-
-GET {{APBD_DatabaseFirst_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###
