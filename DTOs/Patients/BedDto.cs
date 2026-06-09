@@ -1,0 +1,8 @@
+﻿namespace APBD_DatabaseFirst.DTOs.Patients;
+
+public class BedDto
+{
+    public int Id { get; set; }
+    public BedTypeDto BedType { get; set; } = null!;
+    public RoomDto Room { get; set; } = null!;
+}
